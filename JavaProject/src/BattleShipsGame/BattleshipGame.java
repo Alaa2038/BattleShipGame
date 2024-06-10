@@ -16,7 +16,7 @@ public class BattleshipGame {
             System.out.println(e.getMessage());
         }
         try {
-            file = new FileOutputStream("C:\\Users\\NTC\\Desktop\\JavaProject\\Computer.txt", true);
+            file = new FileOutputStream("Computer.txt", true);
             file.write("\nComputer predicted attack coordinate:\n".getBytes());
             file.flush();
         } catch (IOException e) {
