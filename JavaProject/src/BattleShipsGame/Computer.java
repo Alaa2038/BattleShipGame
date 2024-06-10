@@ -15,7 +15,7 @@ public class Computer {
         bds.initializeBoardB();
     }
     public void ComputerSetUp() throws IOException {
-        file=new FileOutputStream("C:\\Users\\NTC\\Desktop\\JavaProject\\Computer.txt",true);
+        file=new FileOutputStream("Computer.txt",true);
         file.write(("\n***************\nNew Game.\n***************").getBytes());
         file.write("\nComputer SetUp\n".getBytes());
         char direction=randomDirection();
@@ -78,7 +78,7 @@ public class Computer {
             System.out.println("The computer has MISSED your ship.");
     }
     public Coordinate predictedCoordinate(Player p)throws IOException{
-        file=new FileOutputStream("C:\\Users\\NTC\\Desktop\\JavaProject\\Computer.txt",true);
+        file=new FileOutputStream("Computer.txt",true);
         Coordinate c;
         if(crds.size()>=1){
             c=crds.get(crds.size()-1);
